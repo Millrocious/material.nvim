@@ -36,6 +36,7 @@ M.load = function()
         DevIconToml     = { fg = m.orange },
         DevIconKotlin   = { fg = m.orange },
         DevIconSwift    = { fg = m.orange },
+        DevIconTsx      = { fg = m.cyan },
     }
 
     return plugin_hls
