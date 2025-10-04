@@ -44,7 +44,7 @@ local colors = {
 
 -- Style specific colors
 
-if vim.g.material_style == "darker" then
+if vim.g.material_style == "dark-pastel" then
     -- Darker theme style
 
     if high_visibility.darker then
