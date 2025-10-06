@@ -45,7 +45,7 @@ M.main_highlights.syntax = function()
         Label          = { fg = s.keyword }, -- case, default, etc.
         Operator       = { fg = s.operator },
         Exception      = { fg = m.red },
-        Macro          = { fg = m.cyan },
+        Macro          = { fg = m.purple },
         Include        = { link = "Macro" },
         -- Define         = { link = "Macro" },
         -- PreProc        = { link = "Macro" },
@@ -100,9 +100,9 @@ M.main_highlights.treesitter = function()
             ["@variable"]           = { link = "Identifier" },
             ["@variable.builtin"]   = { link = "@keyword" },
             -- ["@field"]              = { fg = e.fg_dark },
-            ["@property"]           = { fg = e.fg_dark },
-            ["@variable.parameter"] = { link = "Identifier" },
-            ["@variable.member"]    = { fg = e.fg_dark }, -- Fields
+            ["@property"]           = { fg = e.fg },
+            ["@variable.parameter"] = { fg = m.orange },
+            ["@variable.member"]    = { fg = e.fg }, -- Fields
             ["@string.special.symbol"] = { fg = m.yellow },
 
             ["@function"]         = { link = "Function" },
@@ -115,8 +115,8 @@ M.main_highlights.treesitter = function()
 
             ["@constructor"]      = { fg = m.blue },
 
-            ["@keyword"]           = { fg = m.cyan },
-            ["@keyword.coroutine"] = { fg = m.cyan, italic = true },
+            ["@keyword"]           = { fg = m.purlple },
+            ["@keyword.coroutine"] = { fg = m.purple, italic = true },
             ["@keyword.operator"]  = { link = "@keyword" },
             ["@keyword.return"]    = { link = "@keyword" },
             ["@keyword.function"]  = { link = "@keyword" },
@@ -127,8 +127,8 @@ M.main_highlights.treesitter = function()
             ["@keyword.import"]            = { link = "Include" },
             ["@keyword.exception"]         = { link = "Exception" },
 
-            ["@constant"]         = { fg = m.yellow },
-            ["@constant.builtin"] = { fg = m.yellow },
+            ["@constant"]         = { fg = m.orange },
+            ["@constant.builtin"] = { fg = m.orange },
             ["@constant.macro"]   = { fg = m.cyan },
 
             ["@keyword.directive"] = { fg = m.cyan },
@@ -136,9 +136,9 @@ M.main_highlights.treesitter = function()
             ["@module"] = { fg = m.yellow },
 
             ["@string"]         = { link = "String" },
-            ["@string.escape"]  = { fg = e.fg_dark },
+            ["@string.escape"]  = { fg = e.cyan },
             ["@string.regexp"]   = { fg = m.yellow },
-            ["@string.special"] = { fg = e.fg_dark },
+            ["@string.special"] = { fg = e.cyan },
 
             ["@character"] = { link = "Character" },
 		        ["@character.special"] = { link = "SpecialChar" },
