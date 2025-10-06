@@ -426,7 +426,7 @@ M.async_highlights.load_lsp = function()
         ["@lsp.type.enumMember"]                   = { link = "@constant" },
         ["@lsp.type.escapeSequence"]               = { link = "@string.escape" },
         ["@lsp.type.formatSpecifier"]              = { link = "@punctuation" },
-        ["@lsp.type.interface"]                    = { link = "Identifier" },
+        ["@lsp.type.interface"]                    = { fg = m.green },
         ["@lsp.type.keyword"]                      = { link = "@keyword" },
         ['@lsp.type.class']                        = { link = "@type" },
         ["@lsp.type.namespace"]                    = { link = "@module" },
@@ -449,6 +449,7 @@ M.async_highlights.load_lsp = function()
         ["@lsp.typemod.type.defaultLibrary"]       = { link = "@type.builtin" },
         ["@lsp.typemod.variable.defaultLibrary"]   = { link = "@variable.builtin" },
         ["@lsp.typemod.variable.injected"]         = { link = "@variable" },
+
 
     }
 
