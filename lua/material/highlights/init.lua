@@ -115,7 +115,7 @@ M.main_highlights.treesitter = function()
 
             ["@constructor"]      = { fg = m.blue },
 
-            ["@keyword"]           = { fg = m.purlple },
+            ["@keyword"]           = { fg = m.purple },
             ["@keyword.coroutine"] = { fg = m.purple, italic = true },
             ["@keyword.operator"]  = { link = "@keyword" },
             ["@keyword.return"]    = { link = "@keyword" },
